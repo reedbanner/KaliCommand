@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Simple Script to run my commands
+
+TargetIP=10.0.2.6
+
+whatweb $TargetIP
+nikto -h $TargetIP
+nmap --script banner $TargetIP
